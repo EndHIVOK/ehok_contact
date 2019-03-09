@@ -1,6 +1,6 @@
 name: 'EHOK Contacts'
 type: module
-description: 'Integrate RedHen Contact with End HIV OK platform'
+description: 'Integrate RedHen Contact with End HIV OK Platform.'
 core: 8.x
 package: 'EHOK'
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
   - drupal:link
   - drupal:media
   - drupal:name (>= 8.x-1.0-rc1)
+  - drupal:office_hours (>= 8.x-1.1)
   - drupal:options
   - drupal:redhen_contact (>= 8.x-1.0-alpha3)
   - drupal:telephone

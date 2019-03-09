@@ -1,6 +1,6 @@
 {
   "name": "drupal/ehok_contact",
-  "type": "drupal-module",
+  "type": "drupal-custom-module",
   "description": "Integrate RedHen Contact with End HIV OK platform",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",

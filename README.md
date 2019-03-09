@@ -2,18 +2,41 @@
 
 Integrates RedHen Contact with End HIV OK platform.
 
-## Fields types
+## Design considerations
+
+The base module `ehok_contact` should work without needing any other End HIV OK Platform components.
+
+### Required modules
+
+| Name            | Purpose                             |
+| --------------- | ----------------------------------- |
+| `address`         | Provides address field              |
+| `gender`          | Provides gender field               |
+| `geofield`        | Provides geofield field             |
+| `languagefield`   | Provides languagefield field        |
+| `link`            | Provides link (URL) field           |
+| `media`           | Provides Media entity and field     |
+| `name`            | Provides name field                 |
+| `options`         | Provides options field              |
+| `redhen_contact`  | Provides RedHen Contact entity      |
+| `taxonomy`        | Provides Taxonomy entity and field  |
+| `telephone`       | Provides telephone field            |
+| `text`            | Provides text field.                |
+
+### Fields types
 
 - Address
+- Gender
 - Geofield
-- Languagefield
+- Language field
 - Link
 - Media
-- Name
+- Name field
 - Options
-- Taxonomy reference
+- Taxonomy
 - Telephone
 - Text
+- Office hours
 
 ## Contact types
 
@@ -21,7 +44,19 @@ Integrates RedHen Contact with End HIV OK platform.
 - Community member
 - Healthcare provider
 - Patient
-- Person
+
+### Fields
+
+Label           | Machine-name    | Type      | Widget      | Formatter   | Help
+--------------- | --------------- | --------- | ----------- | ----------- | ----
+Legal name      | name_legal      | name      | name        | name        |
+Preferred name  | name_preferred  | textfield | plain_text  | plain_text  |
+
+
+#### Business owner
+#### Community member
+#### Healthcare provider
+#### Patient
 
 ## Vocabularies
 
