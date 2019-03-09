@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ehok_contact.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ehok_contact_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ehok_contact module.
+    case 'help.page.ehok_contact':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integrate RedHen Contact with End HIV OK platform') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ehok_contact_theme() {
+  return [
+    'ehok_contact' => [
+      'render element' => 'children',
+    ],
+  ];
+}

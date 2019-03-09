@@ -1,0 +1,37 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Markdown and text files will convert line endings per Git.
+*.md text
+.txt text
+
+# PHP-related file types will always be converted to LF line endings.
+*.inc text eol=lf
+*.module text eol=lf
+*.php text eol=lf
+*.twig text eol=lf
+
+# Structured data will always be converted to LF line endings.
+*.json text eol=lf
+*.yml text eol=lf
+*.xml text eol=lf
+
+# Web assets will always be converted to LF line endings.
+*.css text eol=lf
+*.js text  eol=lf
+
+# Dot files will always be converted to LF line endings.
+.editorconfig text eol=lf
+.csslintrc text eol=lf
+.eslintignore text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.htaccess text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.gif binary eol=lf
+*.jpg binary eol=lf
+*.png binary eol=lf
