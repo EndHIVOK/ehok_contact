@@ -7,14 +7,26 @@
   "license": "GPL-2.0+",
   "homepage": "https://www.drupal.org/project/ehok_contact",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "support": {
     "issues": "https://www.drupal.org/project/issues/ehok_contact",
     "source": "http://cgit.drupalcode.org/ehok_contact"
   },
   "require": {
-    "php": "^7.1"
+    "php": "^7.1",
+    "drupal/redhen": "^1.0@alpha",
+    "drupal/name": "^1.0@RC",
+    "drupal/gender": "^1.0@alpha",
+    "drupal/languagefield": "^1.4",
+    "drupal/office_hours": "^1.1"
   },
   "suggest": {
     "ext-zend-opcache": "*"
-  }
+  },
+  "repositories": [
+    {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+    }
+  ]
 }
